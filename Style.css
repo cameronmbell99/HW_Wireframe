@@ -2,7 +2,12 @@ header,
 section,
 aside,
 footer {
+    margin: 20px;
     background: #ebebeb;
+}
+
+header {
+    height: 70px;
 }
 
 h1 {
@@ -13,7 +18,7 @@ h1 {
     background: #ebebeb;
     list-style-type: none;
     text-align: center;
-    margin: 0;
+    margin: 20px;
     padding: 0;
 }
 
@@ -32,16 +37,16 @@ body {
 }
 
 section {
-    width: 495px;
+    /** width: 55%;
+    float: left;**/
     overflow: auto;
-    float: left;
 }
 
 aside {
-    width: 45%;
-    float: right;
+    width: auto;
+    /**float: left;**/
     padding-left: 20px;
-    text-align: center;
+    margin: 20px;
 }
 
 .relative {
@@ -60,14 +65,47 @@ article {
     color: #ebebeb;
     background: #777;
     overflow: auto;
+    margin: 10px;
+    text-align: center;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 p {
     color: #777;
     background: #ebebeb;
+    margin: 10px;
+}
+
+.container {
+    height: 100px;
+    position: relative;
+}
+
+.SecContainer {
+    float: left;
+    width: 60%;
+}
+
+.AsiContainer {
+    float: left;
+    width: 40%;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 footer {
     clear: both;
-    height: 100px;
+    height: 70px;
 }
